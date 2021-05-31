@@ -1,0 +1,26 @@
+Periods:
+1. last_3days
+2. yesterday
+3. last_hour
+
+Tables:
+1. Metric
+- id -> (last_3days: 2, yesterday: 1, last_hour: 0) - Primary Key
+- bookings_current
+- searches_current
+- bookings_previous
+- zeroes
+- timeout
+- errors
+- avg_price
+- ctr
+- clicks_previous
+- str
+- clicks_current
+- searches_previous
+
+2. MetricError
+- id
+- count
+- code
+- period_id - Foreign Key -< Metric.id
